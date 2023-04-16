@@ -78,6 +78,7 @@ class EmployeeController extends Controller
 
     public function search(Request $request)
     {
+        
         $query = Employee::query();
 
         $department_id = $request->input('department_id');
